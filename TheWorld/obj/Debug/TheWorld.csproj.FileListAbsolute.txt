@@ -1,0 +1,16 @@
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\bin\Debug\TheWorld.exe.config
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\bin\Debug\TheWorld.exe
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\bin\Debug\TheWorld.pdb
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\obj\Debug\TheWorld.csprojResolveAssemblyReference.cache
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\obj\Debug\MainWindow.g.cs
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\obj\Debug\App.g.cs
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\obj\Debug\TheWorld_MarkupCompile.cache
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\obj\Debug\TheWorld_MarkupCompile.lref
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\obj\Debug\MainWindow.baml
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\obj\Debug\TheWorld.g.resources
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\obj\Debug\TheWorld.Properties.Resources.resources
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\obj\Debug\TheWorld.csproj.GenerateResource.Cache
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\obj\Debug\TheWorld.exe
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\obj\Debug\TheWorld.pdb
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\obj\Debug\Popup.g.cs
+c:\profili\U381258\Desktop\VS Projects\TheWorld\TheWorld\obj\Debug\Popup.baml

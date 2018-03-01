@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96F2F52F-F208-4A41-A24A-2F02CE0126BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TheWorld</RootNamespace>
+    <AssemblyName>TheWorld</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Abstractions\Classes\AbstractCell.cs" />
+    <Compile Include="Core\Abstractions\Classes\AbstractHuman.cs" />
+    <Compile Include="Core\Abstractions\Classes\AbstractProfession.cs" />
+    <Compile Include="Core\Abstractions\Classes\AbstractWorker.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\IHuman.cs" />
+    <Compile Include="Core\Implementations\Human.cs" />
+    <Compile Include="Core\Implementations\Worker.cs" />
+    <Compile Include="Core\Abstractions\Classes\Artificial\AbstractArtificialCell.cs" />
+    <Compile Include="Core\Abstractions\Classes\Artificial\AbstractArtificialTypeCell.cs" />
+    <Compile Include="Core\Abstractions\Classes\Maps\Abstract2DMap.cs" />
+    <Compile Include="Core\Abstractions\Classes\Maps\Abstract3DMap.cs" />
+    <Compile Include="Core\Abstractions\Classes\Maps\Configurations\Abstract2DConfiguration.cs" />
+    <Compile Include="Core\Abstractions\Classes\Maps\Configurations\Abstract3DConfiguration.cs" />
+    <Compile Include="Core\Abstractions\Classes\Maps\Configurations\AbstractConfiguration.cs" />
+    <Compile Include="Core\Abstractions\Classes\Natural\AbstractNaturalCell.cs" />
+    <Compile Include="Core\Abstractions\Classes\Natural\AbstractNaturalTypeCell.cs" />
+    <Compile Include="Core\Abstractions\Classes\Natural\AbstractResource.cs" />
+    <Compile Include="Core\Abstractions\Classes\Stats.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\Artificial\IArtificialCell.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\Artificial\IArtificialTypeCell.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\ICell.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\IProfession.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\IWorker.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\Maps\Configurations\I2DConfiguration.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\Maps\Configurations\I3DConfiguration.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\Maps\Configurations\IConfiguration.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\Maps\I2DMap.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\Maps\I3DMap.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\Maps\IMap.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\Natural\INaturalCell.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\Natural\INaturalTypeCell.cs" />
+    <Compile Include="Core\Abstractions\Interfaces\Natural\IResource.cs" />
+    <Compile Include="Core\Implementations\Artificial\ArtificialCell.cs" />
+    <Compile Include="Core\Implementations\Artificial\TypeCell\House.cs" />
+    <Compile Include="Core\Implementations\Builder.cs" />
+    <Compile Include="Core\Implementations\Maps\Configurations\Alternative2DMapConfiguration.cs" />
+    <Compile Include="Core\Implementations\Maps\Configurations\Default2DMapConfiguration.cs" />
+    <Compile Include="Core\Implementations\Maps\Configurations\Default3DMapConfiguration.cs" />
+    <Compile Include="Core\Implementations\Maps\Default2DMap.cs" />
+    <Compile Include="Core\Implementations\Maps\Default3DMap.cs" />
+    <Compile Include="Core\Implementations\Natural\NaturalCell.cs" />
+    <Compile Include="Core\Implementations\Natural\TypeCell\Resources\Wood.cs" />
+    <Compile Include="Core\Implementations\Natural\TypeCell\Tree.cs" />
+    <Compile Include="Core\Implementations\Natural\TypeCell\Water.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Popup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Popup.xaml.cs">
+      <DependentUpon>Popup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
